@@ -20,13 +20,13 @@ const areas = [
 
 export default function PracticeAreas() {
   return (
-    <section id="practice" className="relative py-24 lg:py-32 bg-light-gray overflow-hidden">
+    <section className="relative py-10 lg:py-12 bg-light-gray overflow-hidden">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gold/[0.03] rounded-full blur-3xl" />
 
       <div className="section-padding">
         <div className="container-max">
-          <div className="text-center mb-16 reveal">
-            <div className="inline-flex items-center gap-2 mb-6">
+          <div className="text-center mb-8 reveal">
+            <div className="inline-flex items-center gap-2 mb-3">
               <div className="w-8 h-[2px] bg-gold" />
               <span className="text-gold text-sm font-body tracking-wider uppercase">Our Expertise</span>
               <div className="w-8 h-[2px] bg-gold" />
@@ -39,21 +39,21 @@ export default function PracticeAreas() {
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {areas.map((area, i) => (
               <div
                 key={area.title}
-                className="reveal-scale group relative bg-white p-6 rounded-sm border border-primary/5 card-hover gold-border-hover"
+                className="reveal-scale group relative bg-white p-4 rounded-sm border border-primary/5 card-hover gold-border-hover"
                 style={{ transitionDelay: `${i * 60}ms` }}
               >
-                <div className="w-12 h-12 rounded-sm bg-gold/10 flex items-center justify-center mb-4 group-hover:bg-gold/20 transition-colors duration-300">
-                  <area.icon className="w-6 h-6 text-gold group-hover:scale-110 transition-transform duration-300" />
+                <div className="w-10 h-10 rounded-sm bg-gold/10 flex items-center justify-center mb-3 group-hover:bg-gold/20 transition-colors duration-300">
+                  <area.icon className="w-5 h-5 text-gold group-hover:scale-110 transition-transform duration-300" />
                 </div>
                 <h3 className="font-display text-lg font-semibold text-primary mb-2 group-hover:text-gold-dark transition-colors duration-300">
                   {area.title}
                 </h3>
                 <p className="font-body text-sm text-primary/50 leading-relaxed">{area.desc}</p>
-                <div className="mt-4 flex items-center gap-2 text-gold opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">
+                <div className="mt-3 flex items-center gap-2 text-gold opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">
                   <span className="text-xs font-body font-medium">Learn More</span>
                   <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

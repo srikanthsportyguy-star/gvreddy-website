@@ -4,11 +4,8 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
 import Stats from './components/Stats';
-import PracticeAreas from './components/PracticeAreas';
-import WhyChooseUs from './components/WhyChooseUs';
-import Industries from './components/Industries';
-import Team from './components/Team';
-import Experience from './components/Experience';
+import PracticePage from './components/PracticePage';
+import TeamPage from './components/TeamPage';
 import Insights from './components/Insights';
 import Testimonials from './components/Testimonials';
 import Careers from './components/Careers';
@@ -36,17 +33,38 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <About />
-        <Stats />
-        <PracticeAreas />
-        <WhyChooseUs />
-        <Industries />
-        <Team />
-        <Experience />
-        <Insights />
-        <Testimonials />
-        <Careers />
-        <Contact />
+        <section id="about" className="page-group page-group-about">
+          <div className="page-group-inner">
+            <About />
+            <Stats />
+          </div>
+        </section>
+        <section id="practice" className="page-group page-group-practice">
+          <div className="page-group-inner">
+            <PracticePage />
+          </div>
+        </section>
+        <section id="team" className="page-group page-group-team">
+          <div className="page-group-inner">
+            <TeamPage />
+          </div>
+        </section>
+        <section id="insights" className="page-group page-group-insights">
+          <div className="page-group-inner">
+            <Insights />
+            <Testimonials />
+          </div>
+        </section>
+        <section id="careers" className="page-group page-group-careers">
+          <div className="page-group-inner">
+            <Careers />
+          </div>
+        </section>
+        <section id="contact" className="page-group page-group-contact">
+          <div className="page-group-inner">
+            <Contact />
+          </div>
+        </section>
       </main>
       <Footer />
     </div>

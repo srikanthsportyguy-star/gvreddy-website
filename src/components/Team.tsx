@@ -40,13 +40,13 @@ const roleColor = (role: Role) => {
 
 export default function Team() {
   return (
-    <section id="team" className="relative py-24 lg:py-32 bg-light-gray overflow-hidden">
+    <section className="relative py-10 lg:py-12 bg-light-gray overflow-hidden">
       <div className="absolute bottom-0 right-0 w-80 h-80 bg-gold/[0.03] rounded-full blur-3xl" />
 
       <div className="section-padding">
         <div className="container-max">
-          <div className="text-center mb-16 reveal">
-            <div className="inline-flex items-center gap-2 mb-6">
+          <div className="text-center mb-8 reveal">
+            <div className="inline-flex items-center gap-2 mb-3">
               <div className="w-8 h-[2px] bg-gold" />
               <span className="text-gold text-sm font-body tracking-wider uppercase">Our People</span>
               <div className="w-8 h-[2px] bg-gold" />
@@ -59,7 +59,7 @@ export default function Team() {
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {team.map((member, i) => {
               const Icon = roleIcon(member.designation);
               return (
@@ -68,17 +68,17 @@ export default function Team() {
                   className="reveal-scale group bg-white rounded-sm overflow-hidden border border-primary/5 card-hover"
                   style={{ transitionDelay: `${i * 60}ms` }}
                 >
-                  <div className="relative aspect-[4/5] bg-gradient-to-b from-primary to-dark-gray overflow-hidden">
+                  <div className="relative aspect-[5/4] bg-gradient-to-b from-primary to-dark-gray overflow-hidden">
                     <div className="absolute inset-0 flex flex-col items-center justify-center">
-                      <div className={`w-20 h-20 rounded-full bg-gradient-to-br ${roleColor(member.designation)} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-500`}>
+                      <div className={`w-14 h-14 rounded-full bg-gradient-to-br ${roleColor(member.designation)} flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-500`}>
                         <span className="font-display text-xl font-bold text-primary">{member.initials}</span>
                       </div>
-                      <Icon className="w-8 h-8 text-gold/30" />
+                    <Icon className="w-6 h-6 text-gold/30" />
                     </div>
                     <div className="absolute inset-0 bg-gold/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   </div>
 
-                  <div className="p-5">
+                  <div className="p-4">
                     <h3 className="font-display text-lg font-semibold text-primary group-hover:text-gold-dark transition-colors duration-300">
                       {member.name}
                     </h3>

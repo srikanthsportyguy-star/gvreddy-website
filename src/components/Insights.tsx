@@ -15,7 +15,7 @@ const categoryColor: Record<string, string> = {
 
 export default function Insights() {
   return (
-    <section id="insights" className="relative py-16 lg:py-20 bg-white overflow-hidden">
+    <section className="relative py-10 lg:py-12 bg-white overflow-hidden">
       <div className="absolute top-0 left-0 w-64 h-64 bg-gold/[0.03] rounded-full blur-3xl" />
 
       <div className="section-padding">

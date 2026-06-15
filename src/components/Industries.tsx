@@ -13,13 +13,13 @@ const industries = [
 
 export default function Industries() {
   return (
-    <section className="relative py-24 lg:py-32 bg-white overflow-hidden">
+    <section className="relative py-10 lg:py-12 bg-white overflow-hidden">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-gold/[0.03] rounded-full blur-3xl" />
 
       <div className="section-padding">
         <div className="container-max">
-          <div className="text-center mb-16 reveal">
-            <div className="inline-flex items-center gap-2 mb-6">
+          <div className="text-center mb-8 reveal">
+            <div className="inline-flex items-center gap-2 mb-3">
               <div className="w-8 h-[2px] bg-gold" />
               <span className="text-gold text-sm font-body tracking-wider uppercase">Sectors We Serve</span>
               <div className="w-8 h-[2px] bg-gold" />
@@ -32,15 +32,15 @@ export default function Industries() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {industries.map((ind, i) => (
               <div
                 key={ind.name}
-                className="reveal-scale group flex flex-col items-center p-8 rounded-sm border border-primary/5 hover:border-gold/30 bg-light-gray/50 hover:bg-gold/5 transition-all duration-500 cursor-default"
+                className="reveal-scale group flex flex-col items-center p-5 rounded-sm border border-primary/5 hover:border-gold/30 bg-light-gray/50 hover:bg-gold/5 transition-all duration-500 cursor-default"
                 style={{ transitionDelay: `${i * 60}ms` }}
               >
-                <div className="w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center mb-4 group-hover:bg-gold/20 group-hover:scale-110 transition-all duration-300">
-                  <ind.icon className="w-7 h-7 text-gold" />
+                <div className="w-11 h-11 rounded-full bg-gold/10 flex items-center justify-center mb-3 group-hover:bg-gold/20 group-hover:scale-110 transition-all duration-300">
+                  <ind.icon className="w-6 h-6 text-gold" />
                 </div>
                 <span className="font-body text-sm font-semibold text-primary/70 group-hover:text-gold-dark text-center transition-colors duration-300">
                   {ind.name}

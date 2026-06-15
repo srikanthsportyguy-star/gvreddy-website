@@ -16,28 +16,28 @@ const perks = [
 
 export default function Careers() {
   return (
-    <section id="careers" className="relative py-24 lg:py-32 bg-white overflow-hidden">
+    <section className="relative py-10 lg:py-12 bg-white overflow-hidden">
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-gold/[0.03] rounded-full blur-3xl" />
 
       <div className="section-padding">
         <div className="container-max">
-          <div className="text-center mb-16 reveal">
-            <div className="inline-flex items-center gap-2 mb-6">
+          <div className="text-center mb-8 reveal">
+            <div className="inline-flex items-center gap-2 mb-3">
               <div className="w-8 h-[2px] bg-gold" />
               <span className="text-gold text-sm font-body tracking-wider uppercase">Join Our Team</span>
               <div className="w-8 h-[2px] bg-gold" />
             </div>
-            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-primary mb-4">
+            <h2 className="font-display text-3xl sm:text-4xl font-bold text-primary mb-3">
               Careers at <span className="gold-text-gradient">GV Reddy Advocates</span>
             </h2>
-            <p className="font-body text-lg text-primary/50 max-w-2xl mx-auto">
+            <p className="font-body text-base text-primary/50 max-w-2xl mx-auto">
               Build your career at a firm that values excellence, integrity and professional growth.
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 reveal">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6 reveal">
             {perks.map((perk) => (
-              <div key={perk.text} className="flex items-center gap-3 p-4 rounded-sm border border-primary/5 bg-light-gray/50">
+              <div key={perk.text} className="flex items-center gap-3 p-3 rounded-sm border border-primary/5 bg-light-gray/50">
                 <div className="w-10 h-10 rounded-sm bg-gold/10 flex items-center justify-center shrink-0">
                   <perk.icon className="w-5 h-5 text-gold" />
                 </div>
@@ -46,11 +46,11 @@ export default function Careers() {
             ))}
           </div>
 
-          <div className="space-y-4 reveal">
+          <div className="space-y-3 reveal">
             {openings.map((job) => (
               <div
                 key={job.title}
-                className="group flex flex-col sm:flex-row sm:items-center justify-between p-6 rounded-sm border border-primary/5 hover:border-gold/30 bg-light-gray/30 hover:bg-gold/5 transition-all duration-300 gap-4"
+                className="group flex flex-col sm:flex-row sm:items-center justify-between p-4 rounded-sm border border-primary/5 hover:border-gold/30 bg-light-gray/30 hover:bg-gold/5 transition-all duration-300 gap-4"
               >
                 <div className="flex-1">
                   <h3 className="font-display text-lg font-semibold text-primary group-hover:text-gold-dark transition-colors duration-300">
@@ -72,7 +72,7 @@ export default function Careers() {
             ))}
           </div>
 
-          <div className="mt-10 text-center reveal">
+          <div className="mt-6 text-center reveal">
             <p className="font-body text-sm text-primary/40 mb-4">
               Don't see a matching role? We are always looking for exceptional talent.
             </p>

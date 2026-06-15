@@ -10,18 +10,18 @@ const stats = [
 function StatCounter({ value, suffix, label }: { value: number; suffix: string; label: string }) {
   const { count, ref } = useCountUp(value, 2000);
   return (
-    <div ref={ref} className="text-center p-8">
-      <span className="font-display text-5xl lg:text-6xl font-bold text-gold">
+    <div ref={ref} className="text-center p-6">
+      <span className="font-display text-4xl lg:text-5xl font-bold text-gold">
         {count.toLocaleString()}{suffix}
       </span>
-      <span className="block font-body text-sm text-white/50 mt-3 tracking-wider uppercase">{label}</span>
+      <span className="block font-body text-sm text-white/50 mt-2 tracking-wider uppercase">{label}</span>
     </div>
   );
 }
 
 export default function Stats() {
   return (
-    <section className="relative py-20 bg-primary overflow-hidden">
+    <section className="relative py-8 bg-primary overflow-hidden">
       <div className="absolute inset-0 opacity-5">
         <div
           className="absolute inset-0"

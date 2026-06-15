@@ -25,54 +25,54 @@ export default function Testimonials() {
   const current = testimonials[active];
 
   return (
-    <section className="relative py-14 lg:py-16 bg-primary overflow-visible">
+    <section className="relative py-8 lg:py-8 bg-primary overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-gold/20 to-transparent" />
       <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-gold/20 to-transparent" />
       <Quote className="absolute top-12 left-4 sm:left-16 w-24 h-24 sm:w-32 sm:h-32 text-gold/5" />
 
       <div className="section-padding">
         <div className="container-max">
-          <div className="text-center mb-8 lg:mb-10 reveal">
-            <div className="inline-flex items-center gap-2 mb-4">
-              <div className="w-8 h-[2px] bg-gold" />
+          <div className="text-center mb-5 reveal">
+            <div className="inline-flex items-center gap-2 mb-3">
+              <div className="w-6 h-[2px] bg-gold" />
               <span className="text-gold text-sm font-body tracking-wider uppercase">Client Voices</span>
-              <div className="w-8 h-[2px] bg-gold" />
+              <div className="w-6 h-[2px] bg-gold" />
             </div>
-            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
+            <h2 className="font-display text-2xl sm:text-3xl font-bold text-white leading-tight">
               What Our <span className="gold-text-gradient">Clients Say</span>
             </h2>
           </div>
 
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-2xl mx-auto rounded-sm border border-white/10 bg-white/[0.03] px-6 py-5">
             <div className="text-center">
-              <Quote className="w-8 h-8 text-gold/40 mx-auto mb-5" />
+              <Quote className="w-6 h-6 text-gold/40 mx-auto mb-3" />
               <blockquote
                 key={active}
-                className="font-display text-lg sm:text-xl lg:text-2xl text-white/80 leading-relaxed italic mb-6 animate-fade-in"
+                className="font-display text-base sm:text-lg text-white/80 leading-relaxed italic mb-4 animate-fade-in"
               >
                 "{current.quote}"
               </blockquote>
               <div className="animate-fade-in">
-                <div className="w-10 h-10 rounded-full gold-gradient flex items-center justify-center mx-auto mb-2">
-                  <span className="font-display text-sm font-bold text-primary">
+                <div className="w-8 h-8 rounded-full gold-gradient flex items-center justify-center mx-auto mb-2">
+                  <span className="font-display text-xs font-bold text-primary">
                     {current.name.split(' ').map(n => n[0]).join('')}
                   </span>
                 </div>
-                <p className="font-body text-white font-semibold">{current.name}</p>
-                <p className="font-body text-sm text-white/40">{current.title}</p>
-                <span className="inline-block mt-2 px-3 py-1 bg-gold/10 text-gold text-xs font-body rounded-sm">
+                <p className="font-body text-sm text-white font-semibold">{current.name}</p>
+                <p className="font-body text-xs text-white/40">{current.title}</p>
+                <span className="inline-block mt-2 px-2.5 py-1 bg-gold/10 text-gold text-[11px] font-body rounded-sm">
                   {current.sector}
                 </span>
               </div>
             </div>
 
-            <div className="flex items-center justify-center gap-4 mt-8">
+            <div className="flex items-center justify-center gap-3 mt-5">
               <button
                 onClick={() => { setActive((prev) => (prev - 1 + testimonials.length) % testimonials.length); }}
-                className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/40 hover:border-gold hover:text-gold transition-all duration-300"
+                className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center text-white/40 hover:border-gold hover:text-gold transition-all duration-300"
                 aria-label="Previous testimonial"
               >
-                <ChevronLeft className="w-5 h-5" />
+                <ChevronLeft className="w-4 h-4" />
               </button>
               <div className="flex gap-2">
                 {testimonials.map((_, i) => (
@@ -88,10 +88,10 @@ export default function Testimonials() {
               </div>
               <button
                 onClick={() => { setActive((prev) => (prev + 1) % testimonials.length); }}
-                className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/40 hover:border-gold hover:text-gold transition-all duration-300"
+                className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center text-white/40 hover:border-gold hover:text-gold transition-all duration-300"
                 aria-label="Next testimonial"
               >
-                <ChevronRight className="w-5 h-5" />
+                <ChevronRight className="w-4 h-4" />
               </button>
             </div>
           </div>

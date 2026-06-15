@@ -1,14 +1,14 @@
-import { ArrowRight, Shield, Award, Landmark } from 'lucide-react';
+import { Shield, Award, Landmark } from 'lucide-react';
 
 const aboutImage = '/assets/Aboutus.jpg';
 
 export default function About() {
   return (
-    <section id="about" className="relative py-24 lg:py-32 bg-white overflow-hidden">
+    <section className="relative py-10 lg:py-12 bg-white overflow-hidden">
       <div className="absolute top-0 right-0 w-96 h-96 bg-gold/5 rounded-full blur-3xl" />
 
       <div className="section-padding">
-        <div className="container-max grid lg:grid-cols-2 gap-16 items-center">
+        <div className="container-max grid lg:grid-cols-2 gap-10 items-center">
           <div className="reveal-left relative">
             <div className="relative">
               <div className="relative overflow-hidden rounded-sm aspect-[16/10] bg-light-gray shadow-2xl shadow-primary/10">
@@ -75,14 +75,6 @@ export default function About() {
                 </div>
               ))}
             </div>
-
-            <a
-              href="#practice"
-              className="inline-flex items-center gap-2 px-8 py-3.5 bg-primary text-white font-semibold rounded-sm hover:bg-primary/90 transition-all duration-300 hover:-translate-y-0.5 group"
-            >
-              Learn More
-              <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
-            </a>
           </div>
         </div>
       </div>

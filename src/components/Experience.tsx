@@ -11,14 +11,14 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section className="relative py-24 lg:py-32 bg-primary overflow-hidden">
+    <section className="relative py-10 lg:py-12 bg-primary overflow-hidden">
       <div className="absolute top-1/4 left-0 w-72 h-72 bg-gold/5 rounded-full blur-3xl" />
       <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-gold/20 to-transparent" />
 
       <div className="section-padding">
         <div className="container-max">
-          <div className="text-center mb-16 reveal">
-            <div className="inline-flex items-center gap-2 mb-6">
+          <div className="text-center mb-8 reveal">
+            <div className="inline-flex items-center gap-2 mb-3">
               <div className="w-8 h-[2px] bg-gold" />
               <span className="text-gold text-sm font-body tracking-wider uppercase">Track Record</span>
               <div className="w-8 h-[2px] bg-gold" />
@@ -31,26 +31,26 @@ export default function Experience() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {experiences.map((exp, i) => (
               <div
                 key={exp.title}
-                className="reveal group relative p-8 rounded-sm border border-white/10 hover:border-gold/30 bg-white/[0.02] hover:bg-white/[0.05] transition-all duration-500"
+                className="reveal group relative p-5 rounded-sm border border-white/10 hover:border-gold/30 bg-white/[0.02] hover:bg-white/[0.05] transition-all duration-500"
                 style={{ transitionDelay: `${i * 80}ms` }}
               >
-                <span className="absolute top-6 right-6 px-2 py-1 bg-gold/10 text-gold text-[10px] font-body font-semibold tracking-wider uppercase rounded-sm">
+                <span className="absolute top-5 right-5 px-2 py-1 bg-gold/10 text-gold text-[10px] font-body font-semibold tracking-wider uppercase rounded-sm">
                   {exp.tag}
                 </span>
-                <div className="w-12 h-12 rounded-sm bg-gold/10 flex items-center justify-center mb-5 group-hover:bg-gold/20 transition-colors duration-300">
-                  <exp.icon className="w-6 h-6 text-gold" />
+                <div className="w-10 h-10 rounded-sm bg-gold/10 flex items-center justify-center mb-3 group-hover:bg-gold/20 transition-colors duration-300">
+                  <exp.icon className="w-5 h-5 text-gold" />
                 </div>
-                <h3 className="font-display text-xl font-semibold text-white mb-3 group-hover:text-gold transition-colors duration-300">
+                <h3 className="font-display text-lg font-semibold text-white mb-2 group-hover:text-gold transition-colors duration-300">
                   {exp.title}
                 </h3>
                 <p className="font-body text-sm text-white/40 leading-relaxed group-hover:text-white/60 transition-colors duration-300">
                   {exp.desc}
                 </p>
-                <div className="mt-6 w-0 h-[2px] bg-gold group-hover:w-full transition-all duration-500" />
+                <div className="mt-4 w-0 h-[2px] bg-gold group-hover:w-full transition-all duration-500" />
               </div>
             ))}
           </div>
