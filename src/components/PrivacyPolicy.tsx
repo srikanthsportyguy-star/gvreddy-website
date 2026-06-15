@@ -11,7 +11,7 @@ export default function PrivacyPolicy() {
           <p className="font-body text-sm sm:text-base text-primary/55 leading-relaxed mb-6">
             The current regulations of the Bar Council of India restrict advocates and law firms from advertising
             or soliciting clients in any manner and from providing detailed information about their areas of practice
-            through a website. Accordingly, G. V. Reddy Advocates is limited in the information it can present
+            through a website. Accordingly, G. V. Reddy & Co. Advocates is limited in the information it can present
             on this platform.
           </p>
 
@@ -21,7 +21,7 @@ export default function PrivacyPolicy() {
             </p>
             <ul className="space-y-3 font-body text-sm sm:text-base text-primary/55 leading-relaxed list-disc pl-5">
               <li>
-                You wish to obtain more information about G. V. Reddy Advocates, its areas of practice,
+                You wish to obtain more information about G. V. Reddy & Co. Advocates, its areas of practice,
                 and its team members solely for your personal knowledge and use.
               </li>
               <li>
@@ -34,7 +34,7 @@ export default function PrivacyPolicy() {
                 as legal advice or a legal opinion.
               </li>
               <li>
-                G. V. Reddy Advocates is not responsible or liable for any actions taken based on the information
+                G. V. Reddy & Co. Advocates is not responsible or liable for any actions taken based on the information
                 provided herein. Users are strongly advised to seek independent legal counsel for any specific legal concerns
                 or queries.
               </li>

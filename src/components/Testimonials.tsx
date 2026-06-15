@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 
 const testimonials = [
-  { quote: "GV Reddy Advocates provided exceptional guidance through our complex corporate restructuring. Their strategic approach and deep regulatory knowledge were invaluable in achieving a seamless transaction.", name: 'Amit Kapoor', title: 'CEO, Kapoor Industries', sector: 'Manufacturing' },
+  { quote: "G. V. Reddy & Co. Advocates provided exceptional guidance through our complex corporate restructuring. Their strategic approach and deep regulatory knowledge were invaluable in achieving a seamless transaction.", name: 'Amit Kapoor', title: 'CEO, Kapoor Industries', sector: 'Manufacturing' },
   { quote: "The firm's litigation team secured a landmark victory in our commercial dispute. Their meticulous preparation and courtroom expertise set them apart from other firms we have engaged.", name: 'Dr. Sunita Rao', title: 'Managing Director, Rao Healthcare', sector: 'Healthcare' },
   { quote: "Their FEMA and cross-border advisory was instrumental in structuring our foreign investments. The team's responsiveness and clarity in navigating complex regulations were outstanding.", name: 'Rahul Menon', title: 'CFO, TechBridge Solutions', sector: 'Technology' },
-  { quote: "From real estate acquisition to RERA compliance, GV Reddy Advocates delivered comprehensive legal support that protected our interests at every stage of development.", name: 'Priya Deshmukh', title: 'Director, PrimeSpace Realty', sector: 'Real Estate' },
+  { quote: "From real estate acquisition to RERA compliance, G. V. Reddy & Co. Advocates delivered comprehensive legal support that protected our interests at every stage of development.", name: 'Priya Deshmukh', title: 'Director, PrimeSpace Realty', sector: 'Real Estate' },
 ];
 
 export default function Testimonials() {

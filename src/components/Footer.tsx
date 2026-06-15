@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="container-max flex flex-col gap-4">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <p className="font-body text-xs text-gold/85">
-              &copy; {new Date().getFullYear()} GV Reddy Advocates. All rights reserved.
+              &copy; {new Date().getFullYear()} G. V. Reddy & Co. Advocates. All rights reserved.
             </p>
             <div className="flex items-center gap-6">
               <a href="#privacy" className="font-body text-xs text-gold/85 hover:text-white transition-colors duration-300">Disclaimer</a>

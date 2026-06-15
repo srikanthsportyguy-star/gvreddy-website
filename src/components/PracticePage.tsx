@@ -102,7 +102,7 @@ export default function PracticePage() {
               <span className="text-gold text-xs font-body tracking-wider uppercase">Our Advantage</span>
             </div>
             <h3 className="font-display text-2xl font-bold leading-tight mb-3">
-              Why Choose <span className="gold-text-gradient">GV Reddy Advocates</span>
+              Why Choose <span className="gold-text-gradient">G. V. Reddy & Co. Advocates</span>
             </h3>
             <p className="font-body text-sm text-white/50 leading-relaxed mb-5">
               Distinguished by expertise, integrity and an unwavering commitment to achieving results.

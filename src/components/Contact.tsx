@@ -124,7 +124,7 @@ export default function Contact() {
                   <textarea name="message" value={form.message} onChange={handleChange} rows={3} placeholder="Briefly describe your legal matter..." className="w-full px-4 py-2.5 bg-light-gray border border-primary/10 rounded-sm font-body text-sm text-primary placeholder:text-primary/25 transition-all duration-300 resize-none" />
                 </div>
                 <p className="mb-4 font-body text-[11px] leading-relaxed text-primary/45">
-                  By submitting this form, you agree to be contacted by GV Reddy Advocates regarding your inquiry.
+                  By submitting this form, you agree to be contacted by G. V. Reddy & Co. Advocates regarding your inquiry.
                   This website does not create an advocate-client relationship.
                 </p>
                 <div className="flex flex-wrap gap-4">

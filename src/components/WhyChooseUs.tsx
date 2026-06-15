@@ -24,7 +24,7 @@ export default function WhyChooseUs() {
               <div className="w-8 h-[2px] bg-gold" />
             </div>
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
-              Why Choose <span className="gold-text-gradient">GV Reddy Advocates</span>
+              Why Choose <span className="gold-text-gradient">G. V. Reddy & Co. Advocates</span>
             </h2>
             <p className="font-body text-lg text-white/50 max-w-2xl mx-auto">
               Distinguished by expertise, integrity and an unwavering commitment to achieving results.

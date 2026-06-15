@@ -28,7 +28,7 @@ export default function Careers() {
               <div className="w-8 h-[2px] bg-gold" />
             </div>
             <h2 className="font-display text-3xl sm:text-4xl font-bold text-primary mb-3">
-              Careers at <span className="gold-text-gradient">GV Reddy Advocates</span>
+              Careers at <span className="gold-text-gradient">G. V. Reddy & Co. Advocates</span>
             </h2>
             <p className="font-body text-base text-primary/50 max-w-2xl mx-auto">
               Build your career at a firm that values excellence, integrity and professional growth.

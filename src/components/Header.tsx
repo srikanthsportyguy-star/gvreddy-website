@@ -116,8 +116,8 @@ export default function Header() {
               <Scale className="w-5 h-5 text-primary" strokeWidth={2.5} />
             </div>
             <div className="flex flex-col">
-              <span className="font-display text-xl font-bold text-white tracking-wide">GV REDDY</span>
-              <span className="text-[10px] font-body text-gold tracking-[0.3em] uppercase -mt-0.5">Advocates</span>
+              <span className="font-display text-lg sm:text-xl font-bold text-white tracking-wide leading-tight">G. V. Reddy</span>
+              <span className="text-[10px] font-body text-gold tracking-[0.25em] uppercase -mt-0.5"> &amp; Co. Advocates</span>
             </div>
           </a>
 

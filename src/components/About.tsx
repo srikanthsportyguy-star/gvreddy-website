@@ -48,7 +48,7 @@ export default function About() {
             </h2>
 
             <p className="font-body text-lg text-primary/60 mb-6 leading-relaxed">
-              GV Reddy Advocates is a full-service law firm committed to delivering strategic,
+              G. V. Reddy & Co. Advocates is a full-service law firm committed to delivering strategic,
               practical and results-oriented legal solutions. Our multidisciplinary team advises
               corporations, institutions and individuals across diverse legal domains.
             </p>
