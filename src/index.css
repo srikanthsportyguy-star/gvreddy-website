@@ -370,6 +370,59 @@ input:focus, textarea:focus, select:focus {
   }
 }
 
+@media (max-width: 1023px) {
+  #home {
+    padding-bottom: 1.25rem;
+  }
+
+  #home .section-padding {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #home .container-max {
+    max-width: 100%;
+  }
+
+  #home h1 {
+    font-size: clamp(2.5rem, 9vw, 3.6rem);
+    letter-spacing: -0.03em;
+  }
+
+  #home p {
+    font-size: 0.98rem;
+    line-height: 1.65;
+  }
+
+  #home .grid.grid-cols-2 {
+    gap: 0.75rem;
+  }
+
+  #home .grid.grid-cols-2 > div {
+    padding: 0.875rem 0.75rem;
+  }
+
+  #home .gold-gradient,
+  #home .border.border-gold\/40 {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .page-group {
+    min-height: auto;
+  }
+
+  .page-group .section-padding {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .page-group .container-max > .text-center,
+  .page-group .container-max > .flex {
+    margin-bottom: 1rem;
+  }
+}
+
 @media (min-width: 1024px) and (max-height: 820px) {
   .reveal,
   .reveal-left,

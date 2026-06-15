@@ -33,34 +33,34 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <section id="about" className="page-group page-group-about">
+        <section id="about" className="page-group page-group-about scroll-mt-24">
           <div className="page-group-inner">
             <About />
             <Stats />
           </div>
         </section>
-        <section id="practice" className="page-group page-group-practice">
+        <section id="practice" className="page-group page-group-practice scroll-mt-24">
           <div className="page-group-inner">
             <PracticePage />
           </div>
         </section>
-        <section id="team" className="page-group page-group-team">
+        <section id="team" className="page-group page-group-team scroll-mt-24">
           <div className="page-group-inner">
             <TeamPage />
           </div>
         </section>
-        <section id="insights" className="page-group page-group-insights">
+        <section id="insights" className="page-group page-group-insights scroll-mt-24">
           <div className="page-group-inner">
             <Insights />
             <Testimonials />
           </div>
         </section>
-        <section id="careers" className="page-group page-group-careers">
+        <section id="careers" className="page-group page-group-careers scroll-mt-24">
           <div className="page-group-inner">
             <Careers />
           </div>
         </section>
-        <section id="contact" className="page-group page-group-contact">
+        <section id="contact" className="page-group page-group-contact scroll-mt-24">
           <div className="page-group-inner">
             <Contact />
           </div>

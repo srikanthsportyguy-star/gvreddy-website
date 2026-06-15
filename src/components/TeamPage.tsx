@@ -61,7 +61,7 @@ export default function TeamPage() {
               <img
                 src="/assets/gv-reddy-tile.jpg"
                 alt={founder.name}
-                className="h-56 w-full object-cover object-center lg:h-full"
+                className="h-64 w-full bg-primary/10 object-contain object-center sm:h-72 lg:h-full lg:object-cover"
               />
               <div className="flex flex-col justify-center p-6">
                 <span className="mb-2 inline-flex w-fit rounded-sm bg-gold/10 px-2 py-1 text-[11px] font-body uppercase tracking-wider text-gold">

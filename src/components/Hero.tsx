@@ -39,7 +39,7 @@ export default function Hero() {
               Strategic Legal <span className="gold-text-gradient">Solutions.</span>
               <br />
               Trusted <span className="gold-text-gradient">Results.</span>
-            </h1>
+            </h1> 
 
             <p className="font-body text-base lg:text-lg text-white/60 max-w-xl mb-7 leading-relaxed">
               Providing expert legal representation and advisory services across Corporate Law,
@@ -76,31 +76,31 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="reveal-right hidden lg:block">
-            <div className="relative flex min-h-[calc(100svh-150px)] items-center justify-center">
-              <div className="absolute -top-4 -left-4 w-full h-full border-2 border-gold/20 rounded-sm" />
-              <div className="absolute -bottom-4 -right-4 w-24 h-24 border-2 border-gold/30 rounded-sm" />
+          <div className="reveal-right">
+            <div className="relative mx-auto w-full max-w-[32rem] lg:flex lg:min-h-[calc(100svh-150px)] lg:items-center lg:justify-center">
+              <div className="absolute -top-4 -left-4 hidden h-full w-full rounded-sm border-2 border-gold/20 lg:block" />
+              <div className="absolute -bottom-4 -right-4 hidden h-24 w-24 rounded-sm border-2 border-gold/30 lg:block" />
 
-              <div className="relative w-full max-w-[30rem] max-h-[calc(100svh-170px)] overflow-hidden rounded-sm aspect-[1122/1402] bg-gradient-to-b from-primary to-dark-gray shadow-2xl shadow-black/40">
+              <div className="relative overflow-hidden rounded-sm bg-gradient-to-b from-primary to-dark-gray shadow-2xl shadow-black/40 aspect-[4/5] sm:aspect-[5/6] lg:w-full lg:max-w-[30rem] lg:max-h-[calc(100svh-170px)] lg:aspect-[1122/1402]">
                 {showFounderImage ? (
                   <>
                     <img
                       src={founderTileImage}
                       alt="G.V. Reddy, Founder and Managing Partner"
-                      className="h-full w-full object-contain object-center"
+                      className="h-full w-full object-cover object-center lg:object-contain"
                       onError={() => setShowFounderImage(false)}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-primary/25 via-transparent to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent" />
                   </>
                 ) : (
-                  <div className="absolute inset-0 flex flex-col items-center justify-center">
-                    <div className="w-32 h-32 rounded-full bg-gold/10 border-2 border-gold/30 flex items-center justify-center mb-6">
-                      <Gavel className="w-16 h-16 text-gold/50" />
+                  <div className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
+                    <div className="mb-6 flex h-28 w-28 items-center justify-center rounded-full border-2 border-gold/30 bg-gold/10">
+                      <Gavel className="w-14 h-14 text-gold/50" />
                     </div>
-                    <span className="font-display text-2xl text-white/80 font-semibold">GV Reddy</span>
-                    <span className="font-body text-sm text-gold mt-2">Founding Partner</span>
-                    <div className="w-12 h-[1px] bg-gold/50 mt-4" />
-                    <span className="font-body text-xs text-white/40 mt-3">Senior Advocate</span>
+                    <span className="font-display text-2xl font-semibold text-white/80">GV Reddy</span>
+                    <span className="mt-2 font-body text-sm text-gold">Founding Partner</span>
+                    <div className="mt-4 h-[1px] w-12 bg-gold/50" />
+                    <span className="mt-3 font-body text-xs text-white/40">Senior Advocate</span>
                   </div>
                 )}
               </div>
@@ -109,7 +109,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+      <div className="absolute bottom-4 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 lg:flex">
         <span className="text-xs text-white/30 font-body tracking-widest uppercase">Scroll</span>
         <div className="w-[1px] h-8 bg-gradient-to-b from-gold/50 to-transparent" />
       </div>
