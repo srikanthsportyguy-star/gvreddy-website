@@ -31,7 +31,7 @@ function App() {
   return (
     <div ref={revealRef} className="font-body">
       <Header />
-      <main>
+      <main id="app-shell">
         <Hero />
         <section id="about" className="page-group page-group-about scroll-mt-24">
           <div className="page-group-inner">
