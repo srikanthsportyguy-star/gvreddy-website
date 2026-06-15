@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+    color: #0B0B0B;
+    background: #FFFFFF;
+    overflow-x: hidden;
+  }
+  ::selection {
+    background-color: #C9A35B;
+    color: #FFFFFF;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-24;
+  }
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+  .gold-gradient {
+    background: linear-gradient(135deg, #C9A35B, #D4B06A, #C9A35B);
+  }
+  .gold-text-gradient {
+    background: linear-gradient(135deg, #C9A35B, #D4B06A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .card-hover {
+    @apply transition-all duration-500 ease-out;
+  }
+  .card-hover:hover {
+    @apply -translate-y-2;
+    box-shadow: 0 20px 60px rgba(201, 163, 91, 0.15), 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  .gold-border-hover {
+    @apply relative overflow-hidden;
+  }
+  .gold-border-hover::before {
+    content: '';
+    @apply absolute top-0 left-0 w-full h-0 bg-gold transition-all duration-500 ease-out;
+    z-index: 1;
+  }
+  .gold-border-hover:hover::before {
+    @apply h-1;
+  }
+}
+
+/* Scroll reveal animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.reveal-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+.reveal-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.reveal-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.reveal-scale.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #0B0B0B; }
+::-webkit-scrollbar-thumb { background: #C9A35B; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #D4B06A; }
+
+/* Form focus */
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #C9A35B;
+  box-shadow: 0 0 0 3px rgba(201, 163, 91, 0.15);
+}
