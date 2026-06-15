@@ -123,6 +123,10 @@ export default function Contact() {
                   <label className="block font-body text-xs text-primary/50 uppercase tracking-wider mb-2">Message</label>
                   <textarea name="message" value={form.message} onChange={handleChange} rows={3} placeholder="Briefly describe your legal matter..." className="w-full px-4 py-2.5 bg-light-gray border border-primary/10 rounded-sm font-body text-sm text-primary placeholder:text-primary/25 transition-all duration-300 resize-none" />
                 </div>
+                <p className="mb-4 font-body text-[11px] leading-relaxed text-primary/45">
+                  By submitting this form, you agree to be contacted by GV Reddy Advocates regarding your inquiry.
+                  This website does not create an advocate-client relationship.
+                </p>
                 <div className="flex flex-wrap gap-4">
                   <button type="submit" className="inline-flex items-center gap-2 px-8 py-3.5 gold-gradient text-primary font-semibold rounded-sm hover:shadow-xl hover:shadow-gold/20 transition-all duration-300 hover:-translate-y-0.5 group">
                     Book Consultation

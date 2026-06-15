@@ -6,14 +6,16 @@ export default function Footer() {
       <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
 
       <div className="section-padding py-6">
-        <div className="container-max flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="font-body text-xs text-white/20">
-            &copy; {new Date().getFullYear()} GV Reddy Advocates. All rights reserved.
-          </p>
-          <div className="flex items-center gap-6">
-            <a href="#" className="font-body text-xs text-white/20 hover:text-gold transition-colors duration-300">Privacy Policy</a>
-            <a href="#" className="font-body text-xs text-white/20 hover:text-gold transition-colors duration-300">Terms of Service</a>
-            <a href="#" className="font-body text-xs text-white/20 hover:text-gold transition-colors duration-300">Disclaimer</a>
+        <div className="container-max flex flex-col gap-4">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <p className="font-body text-xs text-white/20">
+              &copy; {new Date().getFullYear()} GV Reddy Advocates. All rights reserved.
+            </p>
+            <div className="flex items-center gap-6">
+              <a href="#privacy" className="font-body text-xs text-white/20 hover:text-gold transition-colors duration-300">Disclaimer</a>
+              <a href="#contact" className="font-body text-xs text-white/20 hover:text-gold transition-colors duration-300">Contact</a>
+              <a href="#home" className="font-body text-xs text-white/20 hover:text-gold transition-colors duration-300">Back to Top</a>
+            </div>
           </div>
         </div>
       </div>

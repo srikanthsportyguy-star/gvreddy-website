@@ -10,6 +10,7 @@ import Insights from './components/Insights';
 import Testimonials from './components/Testimonials';
 import Careers from './components/Careers';
 import Contact from './components/Contact';
+import PrivacyPolicy from './components/PrivacyPolicy';
 import Footer from './components/Footer';
 
 function App() {
@@ -65,6 +66,7 @@ function App() {
             <Contact />
           </div>
         </section>
+        <PrivacyPolicy />
       </main>
       <Footer />
     </div>
