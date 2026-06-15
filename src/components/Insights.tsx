@@ -15,14 +15,14 @@ const categoryColor: Record<string, string> = {
 
 export default function Insights() {
   return (
-    <section id="insights" className="relative py-24 lg:py-32 bg-white overflow-hidden">
+    <section id="insights" className="relative py-16 lg:py-20 bg-white overflow-hidden">
       <div className="absolute top-0 left-0 w-64 h-64 bg-gold/[0.03] rounded-full blur-3xl" />
 
       <div className="section-padding">
         <div className="container-max">
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16 reveal">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10 reveal">
             <div>
-              <div className="inline-flex items-center gap-2 mb-6">
+              <div className="inline-flex items-center gap-2 mb-4">
                 <div className="w-8 h-[2px] bg-gold" />
                 <span className="text-gold text-sm font-body tracking-wider uppercase">Knowledge Hub</span>
               </div>
@@ -42,14 +42,14 @@ export default function Insights() {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-5">
             {articles.map((article, i) => (
               <article
                 key={article.title}
-                className="reveal group p-8 rounded-sm border border-primary/5 hover:border-gold/30 bg-light-gray/30 hover:bg-gold/5 transition-all duration-500 cursor-pointer"
+                className="reveal group p-6 rounded-sm border border-primary/5 hover:border-gold/30 bg-light-gray/30 hover:bg-gold/5 transition-all duration-500 cursor-pointer"
                 style={{ transitionDelay: `${i * 80}ms` }}
               >
-                <div className="flex items-center gap-3 mb-4">
+                <div className="flex items-center gap-3 mb-3">
                   <span className={`px-2.5 py-1 rounded-sm text-[10px] font-body font-semibold tracking-wider uppercase ${categoryColor[article.category] || 'bg-gold/10 text-gold'}`}>
                     {article.category}
                   </span>
@@ -58,7 +58,7 @@ export default function Insights() {
                     <span className="text-[11px] font-body">{article.readTime}</span>
                   </div>
                 </div>
-                <h3 className="font-display text-xl font-semibold text-primary mb-3 group-hover:text-gold-dark transition-colors duration-300 leading-snug">
+                <h3 className="font-display text-lg lg:text-xl font-semibold text-primary mb-2 group-hover:text-gold-dark transition-colors duration-300 leading-snug">
                   {article.title}
                 </h3>
                 <p className="font-body text-sm text-primary/50 leading-relaxed mb-4">{article.excerpt}</p>
