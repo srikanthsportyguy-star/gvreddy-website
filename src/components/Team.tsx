@@ -69,12 +69,20 @@ export default function Team() {
                   style={{ transitionDelay: `${i * 60}ms` }}
                 >
                   <div className="relative aspect-[5/4] bg-gradient-to-b from-primary to-dark-gray overflow-hidden">
-                    <div className="absolute inset-0 flex flex-col items-center justify-center">
-                      <div className={`w-14 h-14 rounded-full bg-gradient-to-br ${roleColor(member.designation)} flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-500`}>
-                        <span className="font-display text-xl font-bold text-primary">{member.initials}</span>
+                    {member.designation === 'Founder' ? (
+                      <img
+                        src="/assets/gv-reddy-tile.jpg"
+                        alt={member.name}
+                        className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                      />
+                    ) : (
+                      <div className="absolute inset-0 flex flex-col items-center justify-center">
+                        <div className={`w-14 h-14 rounded-full bg-gradient-to-br ${roleColor(member.designation)} flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-500`}>
+                          <span className="font-display text-xl font-bold text-primary">{member.initials}</span>
+                        </div>
+                      <Icon className="w-6 h-6 text-gold/30" />
                       </div>
-                    <Icon className="w-6 h-6 text-gold/30" />
-                    </div>
+                    )}
                     <div className="absolute inset-0 bg-gold/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   </div>
 

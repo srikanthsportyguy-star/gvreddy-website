@@ -108,6 +108,52 @@ input:focus, textarea:focus, select:focus {
   box-shadow: 0 0 0 3px rgba(201, 163, 91, 0.15);
 }
 
+@media (min-width: 1024px) and (max-height: 820px) {
+  #home {
+    min-height: calc(100svh - 1px);
+  }
+
+  #home .container-max {
+    align-items: center;
+  }
+
+  #home h1 {
+    font-size: clamp(3rem, 8vh, 4.25rem);
+    margin-bottom: 1rem;
+  }
+
+  #home h1 + p {
+    font-size: 1rem;
+    line-height: 1.55;
+    margin-bottom: 1.25rem;
+  }
+
+  #home .inline-flex.mb-5 {
+    margin-bottom: 1rem;
+  }
+
+  #home .flex.flex-wrap {
+    margin-bottom: 1.5rem;
+  }
+
+  #home .grid.grid-cols-2 {
+    gap: 0.75rem;
+  }
+
+  #home .grid.grid-cols-2 > div {
+    padding: 0.75rem;
+  }
+
+  #home .reveal-right .relative.max-w-\[30rem\] {
+    max-width: 27rem;
+    max-height: calc(100svh - 185px);
+  }
+
+  #home .absolute.bottom-4 {
+    display: none;
+  }
+}
+
 @media (min-width: 1024px) {
   .page-group {
     min-height: calc(100svh - 96px);
@@ -314,6 +360,14 @@ input:focus, textarea:focus, select:focus {
   .team-page article {
     min-height: 0;
   }
+
+  .team-page .founder-card {
+    margin-bottom: 0.875rem;
+  }
+
+  .team-page .team-member-grid article {
+    min-height: 7.25rem;
+  }
 }
 
 @media (min-width: 1024px) and (max-height: 820px) {
@@ -421,5 +475,21 @@ input:focus, textarea:focus, select:focus {
   .practice-page article,
   .team-page article {
     padding: 0.75rem;
+  }
+
+  .team-page .founder-card img {
+    height: 8rem;
+  }
+
+  .team-page .founder-card > .grid {
+    grid-template-columns: 9.5rem minmax(0, 1fr);
+  }
+
+  .team-page .founder-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .team-page .founder-card .p-5 {
+    padding: 0.875rem;
   }
 }

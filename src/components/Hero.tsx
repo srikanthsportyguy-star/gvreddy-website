@@ -27,7 +27,7 @@ export default function Hero() {
       <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
       <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
 
-      <div className="section-padding w-full pt-20 pb-10">
+      <div className="section-padding w-full pt-16 pb-8 lg:pt-14 lg:pb-6">
         <div className="container-max grid lg:grid-cols-2 gap-8 lg:gap-10 items-center">
           <div className="reveal-left">
             <div className="inline-flex items-center gap-2 px-4 py-2 border border-gold/30 rounded-sm mb-5">
@@ -77,17 +77,17 @@ export default function Hero() {
           </div>
 
           <div className="reveal-right hidden lg:block">
-            <div className="relative">
+            <div className="relative flex min-h-[calc(100svh-150px)] items-center justify-center">
               <div className="absolute -top-4 -left-4 w-full h-full border-2 border-gold/20 rounded-sm" />
               <div className="absolute -bottom-4 -right-4 w-24 h-24 border-2 border-gold/30 rounded-sm" />
 
-              <div className="relative max-h-[calc(100svh-160px)] overflow-hidden rounded-sm aspect-[4/5] bg-gradient-to-b from-primary to-dark-gray shadow-2xl shadow-black/40">
+              <div className="relative w-full max-w-[30rem] max-h-[calc(100svh-170px)] overflow-hidden rounded-sm aspect-[1122/1402] bg-gradient-to-b from-primary to-dark-gray shadow-2xl shadow-black/40">
                 {showFounderImage ? (
                   <>
                     <img
                       src={founderTileImage}
                       alt="G.V. Reddy, Founder and Managing Partner"
-                      className="h-full w-full object-cover object-center"
+                      className="h-full w-full object-contain object-center"
                       onError={() => setShowFounderImage(false)}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-primary/25 via-transparent to-transparent" />
