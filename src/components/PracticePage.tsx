@@ -4,12 +4,10 @@ import {
   Building2,
   ClipboardCheck,
   Crown,
-  Factory,
   Fingerprint,
   Gavel,
   Globe,
   GraduationCap,
-  HardHat,
   Heart,
   HeartPulse,
   Home,
@@ -52,8 +50,6 @@ const advantages = [
 const industries = [
   { icon: Banknote, name: 'Banking' },
   { icon: Building2, name: 'Real Estate' },
-  { icon: HardHat, name: 'Infrastructure' },
-  { icon: Factory, name: 'Manufacturing' },
   { icon: Cpu, name: 'Technology' },
   { icon: HeartPulse, name: 'Healthcare' },
   { icon: GraduationCap, name: 'Education' },
@@ -128,7 +124,7 @@ export default function PracticePage() {
           </aside>
         </div>
 
-        <div className="mt-5 grid grid-cols-4 lg:grid-cols-8 gap-2 reveal">
+        <div className="mt-5 grid grid-cols-3 lg:grid-cols-6 gap-2 reveal">
           {industries.map((industry) => (
             <div key={industry.name} className="flex items-center justify-center gap-2 bg-white border border-primary/5 rounded-sm px-3 py-2">
               <industry.icon className="w-4 h-4 text-gold shrink-0" />
