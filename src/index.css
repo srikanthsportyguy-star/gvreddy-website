@@ -175,6 +175,7 @@ input:focus, textarea:focus, select:focus {
   .page-group-insights { --page-scale: 0.94; }
   .page-group-careers { --page-scale: 0.9; justify-content: center; }
   .page-group-contact { --page-scale: 0.92; background: #F7F7F7; }
+  .page-group-privacy { --page-scale: 0.94; background: #F7F7F7; }
 
   .page-group section {
     padding-top: 0.75rem !important;
@@ -222,6 +223,14 @@ input:focus, textarea:focus, select:focus {
   .page-group-practice .page-group-inner,
   .page-group-team .page-group-inner {
     grid-template-columns: minmax(0, 1.1fr) minmax(360px, 0.9fr);
+  }
+
+  .page-group-privacy .page-group-inner {
+    display: block;
+  }
+
+  .page-group-privacy .container-max {
+    max-width: 88rem;
   }
 
   .page-group-insights .page-group-inner {

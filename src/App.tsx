@@ -66,7 +66,11 @@ function App() {
             <Contact />
           </div>
         </section>
-        <PrivacyPolicy />
+        <section id="privacy" className="page-group page-group-privacy scroll-mt-24">
+          <div className="page-group-inner">
+            <PrivacyPolicy />
+          </div>
+        </section>
       </main>
       <Footer />
     </div>
