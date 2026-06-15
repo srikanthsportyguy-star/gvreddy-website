@@ -16,6 +16,11 @@ const practiceLinks = [
   'Mergers & Acquisitions', 'Real Estate Law', 'Regulatory Compliance',
 ];
 
+const phoneNumber = '+91 9000 369 268';
+const phoneHref = 'tel:+919000369268';
+const emailAddress = 'gvreddy1515@gmail.com';
+const address = '8-2-268/K/12, Rd Number 2, Sagar Society, Sri Nagar Colony, Kamalapuri Colony, Banjara Hills, Hyderabad, Telangana 500034';
+
 export default function Footer() {
   return (
     <footer className="relative bg-primary overflow-hidden">
@@ -96,15 +101,15 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-gold shrink-0 mt-0.5" />
-                <span className="font-body text-sm text-white/30">Bangalore, Karnataka, India</span>
+                <span className="font-body text-sm text-white/30">{address}</span>
               </li>
               <li className="flex items-start gap-3">
                 <Phone className="w-4 h-4 text-gold shrink-0 mt-0.5" />
-                <a href="tel:+918012345678" className="font-body text-sm text-white/30 hover:text-gold transition-colors duration-300">+91 80 1234 5678</a>
+                <a href={phoneHref} className="font-body text-sm text-white/30 hover:text-gold transition-colors duration-300">{phoneNumber}</a>
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="w-4 h-4 text-gold shrink-0 mt-0.5" />
-                <a href="mailto:contact@gvreddyadvocates.com" className="font-body text-sm text-white/30 hover:text-gold transition-colors duration-300">contact@gvreddyadvocates.com</a>
+                <a href={`mailto:${emailAddress}`} className="font-body text-sm text-white/30 hover:text-gold transition-colors duration-300">{emailAddress}</a>
               </li>
             </ul>
           </div>

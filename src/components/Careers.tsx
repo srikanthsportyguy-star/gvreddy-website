@@ -1,10 +1,10 @@
 import { Briefcase, ArrowRight, GraduationCap, Users, TrendingUp } from 'lucide-react';
 
 const openings = [
-  { title: 'Senior Associate - Corporate', location: 'Bangalore', type: 'Full-time', experience: '5-8 years' },
-  { title: 'Associate - Litigation', location: 'Bangalore', type: 'Full-time', experience: '2-5 years' },
-  { title: 'Associate - Taxation', location: 'Bangalore', type: 'Full-time', experience: '3-6 years' },
-  { title: 'Legal Researcher', location: 'Bangalore', type: 'Full-time', experience: '1-3 years' },
+  { title: 'Senior Associate - Corporate', location: 'Hyderabad', type: 'Full-time', experience: '5-8 years' },
+  { title: 'Associate - Litigation', location: 'Hyderabad', type: 'Full-time', experience: '2-5 years' },
+  { title: 'Associate - Taxation', location: 'Hyderabad', type: 'Full-time', experience: '3-6 years' },
+  { title: 'Legal Researcher', location: 'Hyderabad', type: 'Full-time', experience: '1-3 years' },
 ];
 
 const perks = [

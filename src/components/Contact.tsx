@@ -3,6 +3,12 @@ import { Phone, Mail, MapPin, Clock, ArrowRight } from 'lucide-react';
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', phone: '', email: '', practice: '', message: '' });
+  const phoneNumber = '+91 9000 369 268';
+  const phoneHref = 'tel:+919000369268';
+  const emailAddress = 'gvreddy1515@gmail.com';
+  const address = '8-2-268/K/12, Rd Number 2, Sagar Society, Sri Nagar Colony, Kamalapuri Colony, Banjara Hills, Hyderabad, Telangana 500034';
+  const mapsUrl = 'https://www.google.com/maps/place/G.+V.+Reddy+%26+Co.,+Advocates/@17.4288566,78.4295691,1473m/data=!3m2!1e3!4b1!4m6!3m5!1s0xac9d4698bc11c461:0x48933d823d94ab98!8m2!3d17.4288566!4d78.432144!16s%2Fg%2F11ypb5hs83?hl=en-IN&entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D';
+  const mapsEmbedUrl = 'https://maps.google.com/maps?q=G.%20V.%20Reddy%20%26%20Co.%2C%20Advocates%4017.4288566%2C78.432144&z=16&ie=UTF8&output=embed';
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -13,9 +19,9 @@ export default function Contact() {
   };
 
   const contactInfo = [
-    { icon: Phone, label: 'Call Us', value: '+91 80 1234 5678', href: 'tel:+918012345678' },
-    { icon: Mail, label: 'Email', value: 'contact@gvreddyadvocates.com', href: 'mailto:contact@gvreddyadvocates.com' },
-    { icon: MapPin, label: 'Office', value: 'Bangalore, Karnataka, India', href: '#' },
+    { icon: Phone, label: 'Call Us', value: phoneNumber, href: phoneHref },
+    { icon: Mail, label: 'Email', value: emailAddress, href: `mailto:${emailAddress}` },
+    { icon: MapPin, label: 'Office', value: address, href: mapsUrl },
     { icon: Clock, label: 'Working Hours', value: 'Mon - Sat: 9:00 AM - 7:00 PM', href: '#' },
   ];
 
@@ -59,11 +65,23 @@ export default function Contact() {
                 ))}
               </div>
 
-              <div className="mt-6 aspect-[4/3] rounded-sm bg-primary/5 border border-primary/5 overflow-hidden relative">
-                <div className="absolute inset-0 flex flex-col items-center justify-center">
-                  <MapPin className="w-8 h-8 text-gold/30 mb-2" />
-                  <span className="font-body text-xs text-primary/30">Bangalore, India</span>
-                </div>
+              <div className="mt-6 aspect-[4/3] rounded-sm bg-primary/5 border border-primary/5 overflow-hidden relative shadow-lg shadow-primary/5">
+                <iframe
+                  title="G.V. Reddy Advocates location"
+                  src={mapsEmbedUrl}
+                  className="absolute inset-0 h-full w-full border-0"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+                <a
+                  href={mapsUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="absolute bottom-3 left-3 inline-flex items-center gap-2 rounded-sm bg-white/95 px-3 py-2 text-xs font-semibold text-primary shadow-lg shadow-primary/10 transition-colors duration-300 hover:text-gold-dark"
+                >
+                  <MapPin className="h-3.5 w-3.5" />
+                  Open in Google Maps
+                </a>
               </div>
             </div>
 
@@ -110,7 +128,7 @@ export default function Contact() {
                     Book Consultation
                     <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
                   </button>
-                  <a href="tel:+918012345678" className="inline-flex items-center gap-2 px-8 py-3.5 border border-primary/20 text-primary font-semibold rounded-sm hover:border-gold hover:text-gold-dark transition-all duration-300">
+                  <a href={phoneHref} className="inline-flex items-center gap-2 px-8 py-3.5 border border-primary/20 text-primary font-semibold rounded-sm hover:border-gold hover:text-gold-dark transition-all duration-300">
                     <Phone className="w-4 h-4" />
                     Call Now
                   </a>

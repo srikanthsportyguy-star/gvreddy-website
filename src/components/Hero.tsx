@@ -1,4 +1,7 @@
+import { useState } from 'react';
 import { ArrowRight, Users, BookOpen, Briefcase, Gavel } from 'lucide-react';
+
+const founderTileImage = '/assets/gv-reddy-tile.jpg';
 
 const stats = [
   { icon: Users, value: '40+', label: 'Legal Professionals' },
@@ -8,6 +11,8 @@ const stats = [
 ];
 
 export default function Hero() {
+  const [showFounderImage, setShowFounderImage] = useState(true);
+
   return (
     <section id="home" className="relative min-h-screen flex items-center bg-primary overflow-hidden">
       <div className="absolute inset-0 opacity-5">
@@ -76,27 +81,28 @@ export default function Hero() {
               <div className="absolute -top-4 -left-4 w-full h-full border-2 border-gold/20 rounded-sm" />
               <div className="absolute -bottom-4 -right-4 w-24 h-24 border-2 border-gold/30 rounded-sm" />
 
-              <div className="relative overflow-hidden rounded-sm aspect-[3/4] bg-gradient-to-b from-primary to-dark-gray">
-                <div className="absolute inset-0 flex flex-col items-center justify-center">
-                  <div className="w-32 h-32 rounded-full bg-gold/10 border-2 border-gold/30 flex items-center justify-center mb-6">
-                    <Gavel className="w-16 h-16 text-gold/50" />
+              <div className="relative overflow-hidden rounded-sm aspect-[4/5] bg-gradient-to-b from-primary to-dark-gray shadow-2xl shadow-black/40">
+                {showFounderImage ? (
+                  <>
+                    <img
+                      src={founderTileImage}
+                      alt="G.V. Reddy, Founder and Managing Partner"
+                      className="h-full w-full object-cover object-center"
+                      onError={() => setShowFounderImage(false)}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary/25 via-transparent to-transparent" />
+                  </>
+                ) : (
+                  <div className="absolute inset-0 flex flex-col items-center justify-center">
+                    <div className="w-32 h-32 rounded-full bg-gold/10 border-2 border-gold/30 flex items-center justify-center mb-6">
+                      <Gavel className="w-16 h-16 text-gold/50" />
+                    </div>
+                    <span className="font-display text-2xl text-white/80 font-semibold">GV Reddy</span>
+                    <span className="font-body text-sm text-gold mt-2">Founding Partner</span>
+                    <div className="w-12 h-[1px] bg-gold/50 mt-4" />
+                    <span className="font-body text-xs text-white/40 mt-3">Senior Advocate</span>
                   </div>
-                  <span className="font-display text-2xl text-white/80 font-semibold">GV Reddy</span>
-                  <span className="font-body text-sm text-gold mt-2">Founding Partner</span>
-                  <div className="w-12 h-[1px] bg-gold/50 mt-4" />
-                  <span className="font-body text-xs text-white/40 mt-3">Senior Advocate</span>
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-60" />
-              </div>
-
-              <div className="absolute -bottom-6 -left-6 bg-primary border border-gold/30 px-6 py-4 rounded-sm shadow-2xl">
-                <div className="flex items-center gap-3">
-                  <div className="w-3 h-3 rounded-full bg-gold animate-pulse" />
-                  <div>
-                    <span className="font-display text-lg font-bold text-white">25+</span>
-                    <span className="block text-xs text-gold font-body">Years of Excellence</span>
-                  </div>
-                </div>
+                )}
               </div>
             </div>
           </div>

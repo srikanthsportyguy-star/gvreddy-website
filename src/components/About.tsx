@@ -1,5 +1,7 @@
 import { ArrowRight, Shield, Award, Landmark } from 'lucide-react';
 
+const aboutImage = '/assets/Aboutus.jpg';
+
 export default function About() {
   return (
     <section id="about" className="relative py-24 lg:py-32 bg-white overflow-hidden">
@@ -9,16 +11,13 @@ export default function About() {
         <div className="container-max grid lg:grid-cols-2 gap-16 items-center">
           <div className="reveal-left relative">
             <div className="relative">
-              <div className="relative overflow-hidden rounded-sm aspect-[4/5] bg-light-gray">
-                <div className="absolute inset-0 flex flex-col items-center justify-center p-8">
-                  <Landmark className="w-24 h-24 text-gold/30 mb-6" />
-                  <div className="text-center">
-                    <span className="font-display text-2xl text-primary/30 font-semibold block">GV Reddy</span>
-                    <span className="font-display text-2xl text-primary/30 font-semibold block">Advocates</span>
-                  </div>
-                  <div className="w-16 h-[1px] bg-gold/30 mt-6" />
-                  <span className="font-body text-sm text-primary/20 mt-4">Est. 1998</span>
-                </div>
+              <div className="relative overflow-hidden rounded-sm aspect-[16/10] bg-light-gray shadow-2xl shadow-primary/10">
+                <img
+                  src={aboutImage}
+                  alt="G.V. Reddy Advocates reception and legal library"
+                  className="h-full w-full object-cover object-center"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent" />
               </div>
 
               <div className="absolute -bottom-6 -right-6 lg:-right-12 bg-primary px-8 py-6 rounded-sm shadow-2xl max-w-[280px]">
